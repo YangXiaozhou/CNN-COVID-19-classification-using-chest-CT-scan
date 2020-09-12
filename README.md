@@ -6,9 +6,26 @@ COVID-19 prediction based on lung CT scan using convolutional neural network
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hugobowne/deep-learning-from-scratch-pytorch/f61063c3ec3aca124fd90b6af604e8e4c7313604?urlpath=lab)
 
 # Description
-- Introduce the building blocks of convolutional neural networks for image classification (Intuition and theory)
-- Demostrate how to build a simple CNN image classifier using tensorflow.keras (Intuition and coding)
-- Share the INFORMS QSR data challenge as a complete case study for image classification using CNN (Coding)
+- End product showcase
+    + Showcase dog and cat classification results
+    + Showcase COVID-19 prediction results
+- Introduce the building blocks of convolutional neural networks for image classification (Foundation)
+    + DNN
+        * Motivation
+        * Building blocks
+    + CNN
+        * Motivation
+        * Features
+- Demostrate how to build a simple CNN image classifier using tensorflow.keras (Toy example)
+    + Step 1:
+    + Step 2:
+    + Step 3:
+    + Step 4:
+- Solve the INFORMS QSR data challenge as a complete case study for image classification using CNN (Action!)
+    + Step 1:
+    + Step 2:
+    + Step 3:
+    + Step 4:
 
 
 ## Prerequisites
