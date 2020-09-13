@@ -1,4 +1,4 @@
-**After the sharing, please leave feedback for me by creating a new issue! I'll use this information to help improve the content and delivery of the material.**
+**Please leave feedback for me by creating a new issue! I'll use this information to help improve the content and delivery of the material.**
 
 # CNN-covid19-prediction-using-lung-CT-scan
 COVID-19 prediction based on lung CT scan using convolutional neural network

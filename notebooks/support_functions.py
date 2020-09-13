@@ -6,6 +6,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from sklearn import metrics
+import matplotlib.pyplot as plt
 
 import cv2
 np.seterr(divide='ignore', invalid='ignore')
@@ -27,20 +28,14 @@ def read_ct_scan(folder_name):
         
     return images
 
-def read_github_ct_scan(folder_name,figure_name):
-    """Read the CT scan image files from directory"""
-    images = []
-
-    # Construct path for two image file folders
-    filepaths = [os.path.join(folder_name,file) for file in figure_name if file != '.DS_Store']
-
-    # Read image file in each folder and convert them to RGB channel
-    for file in filepaths:
-        images.append(np.array(Image.open(file).convert('RGB')))
-
-    return images
-
 def get_metric_history(history):
+    """Extract loss and metrics history from model's training history,
+    and return as a list that has training and validation:
+    1. loss
+    2. accuracy
+    3. type I error
+    4. type II error
+    """
     keys = [key for key in history.history.keys()]    
     
     loss=history.history[keys[0]]
@@ -70,11 +65,11 @@ def get_metric_history(history):
     return metric_history
 
 
-def plot_metric_history(metric_history, epochs):
-    """Plot metrics during model training"""
-    epochs_range = range(epochs)
+def plot_metric_history(metric_history):
+    """Plot loss and metrics history"""
+    epochs_range = range(len(metric_history[0]))
 
-    plt.figure(figsize=(15, 12))
+    plt.figure(figsize=(12, 10))
     plt.subplot(2, 2, 1)
     plt.plot(epochs_range, metric_history[0], label='Training Loss')
     plt.plot(epochs_range, metric_history[1], '-', label='Validation Loss')
@@ -89,19 +84,19 @@ def plot_metric_history(metric_history, epochs):
 
     plt.subplot(2, 2, 3)
     plt.plot(epochs_range, metric_history[4], label='Training Type-1 Error')
-    plt.plot(epochs_range, metric_history[5], '-', label='Validation Type-1 Error')
+    plt.plot(epochs_range, metric_history[5], '-', label='Validation Type I Error')
     plt.legend(loc='upper right')
-    plt.title('Type-1 Error')
+    plt.title('Type I Error')
 
     plt.subplot(2, 2, 4)
     plt.plot(epochs_range, metric_history[6], label='Training Type-2 Error')
-    plt.plot(epochs_range, metric_history[7], '-', label='Validation Type-2 Error')
+    plt.plot(epochs_range, metric_history[7], '-', label='Validation Type II Error')
     plt.legend(loc='upper right')
-    plt.title('Type-2 Error')
+    plt.title('Type II Error')
     plt.show()
     return 
 
-    
+
 # ----------------------------------------------------------------------------------
 # Functions for submission
 def resize_and_shuffle(X, y, img_size=(256,256), batch_size=32, seed=123, buffer_size=500):
