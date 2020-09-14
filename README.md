@@ -1,14 +1,14 @@
 **Please leave feedback for me by creating a new issue! I'll use this information to help improve the content and delivery of the material.**
 
-# CNN-covid19-prediction-using-lung-CT-scan
-COVID-19 prediction based on lung CT scan using convolutional neural network
+# CNN-COVID-19-classification-using-chest-CT-scan
+COVID-19 classification based on chest CT scan using convolutional neural network
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hugobowne/deep-learning-from-scratch-pytorch/f61063c3ec3aca124fd90b6af604e8e4c7313604?urlpath=lab)
 
 # Description
 - End product showcase
     + Showcase dog and cat classification results
-    + Showcase COVID-19 prediction results
+    + Showcase COVID-19 classification results
 - Introduce the building blocks of convolutional neural networks for image classification (Foundation)
     + DNN
         * Motivation
