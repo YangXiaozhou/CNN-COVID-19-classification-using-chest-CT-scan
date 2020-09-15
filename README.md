@@ -13,14 +13,14 @@ There are two Jupyter notebooks in this repo (in `notebooks` folder).
     - This notebook is a walk-through of a CNN COVID-19 CT scan classifier that we've built using `tensorflow.keras`.
     - We built the network as an entry to the INFORMS QSR [data challenge](https://connect.informs.org/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=f404f7b8-fcd6-75d5-f7a7-d262eab132e7).
 
-Team members who built the network: A/P Chen Nan, Shi Yuchen, and me. 
+Team members who built the COVID classifier: A/P [Chen Nan](https://www.eng.nus.edu.sg/isem/staff/chen-nan/), [Shi Yuchen](https://www.linkedin.com/in/yuchen-shi-2830ba158/?originalSubdomain=sg), and me. 
 
 ## Prerequisites
 
-It would help if you know
+It would help if you knew
 
 * programming fundamentals and the basics of the Python programming language (e.g., variables, for loops);
-* a bit about supervised learning problems;
+* a bit about supervised learning problems (e.g., classification, train-test split);
 * a bit about Jupyter Notebooks;
 
 If you are going to code along, have fun with the code and use the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3 (see below), please install it before the sharing.
