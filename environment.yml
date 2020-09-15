@@ -11,6 +11,10 @@ dependencies:
   - scikit-learn=0.23.1
   - seaborn=0.10.1
   - scipy=1.4.1
+  - pillow=7.2.0
+  - pydot=1.4.1 
+  - graphviz=2.42.3
   - pip:
+    - pip=20.2.1
     - tensorflow==2.3.0
 
