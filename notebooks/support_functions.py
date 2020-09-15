@@ -96,18 +96,3 @@ def resize_and_shuffle(X, y, img_size=(256,256), batch_size=32, seed=123, buffer
     ds = results.shuffle(len(y)).batch(batch_size)
     
     return ds
-
-def convert_class_label(y):
-    y = np.array(y)
-    y[y == 'COVID'] = 1
-    y[y != '1'] = 0
-    y = y.astype(int)
-    return y
-
-def label_predictions(predictions):
-    predictions = predictions.reshape(len(predictions))
-    mask = predictions > 0.5
-    predictions = np.full(len(predictions), 'NonCOVID')
-    predictions[mask] = 'COVID'
-    
-    return(predictions.tolist())
