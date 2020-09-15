@@ -1,34 +1,29 @@
-**Please leave feedback for me by creating a new issue! I'll use this information to help improve the content and delivery of the material.**
+**Please leave feedback for me by creating a new issue or my email!**
 
 # CNN-COVID-19-classification-using-chest-CT-scan
 COVID-19 classification based on chest CT scan using convolutional neural network
 
 # Description
-- End product showcase
-    + Showcase dog and cat classification results
-    + Showcase COVID-19 classification results
-- Introduce convolutional neural networks for image classification (Foundation)
-    + DNN
-        * Examples
-        * Key components
-    + CNN
-        * Motivation
-        * Key components
-- Demostrate how to build a simple CNN image classifier using tensorflow.keras (Toy example)
-- Solve the INFORMS QSR data challenge as a complete case study using CNN (Action!)
+There are two Jupyter notebooks in this repo (in `notebooks` folder). 
 
+1. 1-Introduction-to-convolutional-neural-network
+    - This notebook introduces deep neural network (DNN) and convolutional neural network (CNN) to those who are not familiar with this area.
+    - I illustrate the key components in a DNN, motivation for CNN and features that make CNN powerful for image classification.
+2.  2-COVID-19-classification-based-on-CT-scan
+    - This notebook is a walk-through of a CNN COVID-19 CT scan classifier that we've built using `tensorflow.keras`.
+    - We built the network as an entry to the INFORMS QSR [data challenge](https://connect.informs.org/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=f404f7b8-fcd6-75d5-f7a7-d262eab132e7).
+
+Team members who built the network: A/P Chen Nan, Shi Yuchen, and me. 
 
 ## Prerequisites
 
-It would help if you knew
+It would help if you know
 
 * programming fundamentals and the basics of the Python programming language (e.g., variables, for loops);
+* a bit about supervised learning problems;
 * a bit about Jupyter Notebooks;
 
-**However, I think the most important and beneficial prerequisite is a will to learn new things so if you have this quality, you'll definitely get something out of this tutorial.**
-
 If you are going to code along, have fun with the code and use the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3 (see below), please install it before the sharing.
-
 
 ## Getting set up computationally
 
@@ -70,6 +65,6 @@ activate CNN-COVID-19-classification-using-chest-CT-scan
 
 In the terminal, execute `jupyter notebook`.
 
-Then open the notebook `xxx.ipynb` and we're ready to get coding. Enjoy.
+Then open the notebook `1-Introduction-to-convolutional-neural-network.ipynb` and you're ready to dive in. Enjoy.
 
 
