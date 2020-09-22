@@ -1,5 +1,7 @@
 **Please leave feedback for me by creating a new issue or through my email!**
 
+**If you like the content, please star this repo!**
+
 # CNN-COVID-19-classification-using-chest-CT-scan
 COVID-19 classification based on chest CT scan using convolutional neural network
 
