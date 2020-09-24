@@ -17,33 +17,23 @@ There are two Jupyter notebooks in this repo (in `notebooks` folder).
 
 Team members who built the COVID classifier: A/P [Chen Nan](https://www.eng.nus.edu.sg/isem/staff/chen-nan/), [Shi Yuchen](https://www.linkedin.com/in/yuchen-shi-2830ba158/?originalSubdomain=sg), and me. 
 
-## Prerequisites
-
-It would help if you knew
-
-* programming fundamentals and the basics of the Python programming language (e.g., variables, for loops);
-* a bit about supervised learning problems (e.g., classification, train-test split);
-* a bit about Jupyter Notebooks;
-
-If you are going to code along, have fun with the code and use the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3 (see below), please install it before the sharing.
-
-## Getting set up computationally
+## Set up
 
 ### 1. Clone the repository
 
-To get set up for this sharing, clone this repository. You can do so by executing the following in your terminal:
+You can do so by executing the following in your terminal:
 
 ```
 git clone https://github.com/YangXiaozhou/CNN-COVID-19-classification-using-chest-CT-scan
 ```
 
-Alternatively, you can download the zip file of the repository at the top of the main page of the repository. If you prefer not to use git or don't have experience with it, this a good option.
+Alternatively, you can download the zip file of the repository at the top of the main page of the repository. 
 
 ### 2. Download Anaconda (if you haven't already)
 
 If you do not already have the [Anaconda distribution](https://www.anaconda.com/download/) of Python 3, go get it (You can also do this without Anaconda: using `pip` to install the required packages, however Anaconda is great for Data Science and I encourage you to use it).
 
-### 3. Create your conda environment for this sharing
+### 3. Create a new conda environment
 
 Navigate to the relevant directory in your terminal`CNN-COVID-19-classification-using-chest-CT-scan` and install required packages in a new conda environment:
 
