@@ -17,6 +17,9 @@ There are two Jupyter notebooks in this repo (in `notebooks` folder).
 
 Team members who built the COVID classifier: A/P [Chen Nan](https://www.eng.nus.edu.sg/isem/staff/chen-nan/), [Shi Yuchen](https://www.linkedin.com/in/yuchen-shi-2830ba158/?originalSubdomain=sg), and me. 
 
+The CT scan data set is from [here](https://github.com/UCSD-AI4H/COVID-CT). Their details are described in this preprint: [COVID-CT-Dataset: A CT Scan Dataset about COVID-19](https://arxiv.org/pdf/2003.13865.pdf).
+
+
 ## Set up
 
 ### 1. Clone the repository
